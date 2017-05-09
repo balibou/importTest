@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+</head>
+
+<body>
+
+    <script>
+      window.seedAsyncInit = function() {
+        console.log(Test);
+      };
+      (function(d, s){
+         var js, sjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s); js.async = true;
+         js.src = "./dist.js";
+         sjs.parentNode.insertBefore(js, sjs);
+       }(document, 'script'));
+    </script>
+</body>
+
+</html>
